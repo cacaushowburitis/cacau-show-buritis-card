@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartão Cacau Show Buritis</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    :root {
+      --choco-dark: #4E342E;
+      --choco-light: #795548;
+      --cream: #FBEED5;
+    }
+    body {
+      background-color: var(--cream);
+      font-family: 'Inter', sans-serif;
+    }
+    .btn-action {
+      @apply flex items-center justify-center p-4 rounded-2xl text-lg font-semibold uppercase shadow-md text-white;
+      background-color: var(--choco-dark);
+      transition: background-color 0.2s, transform 0.1s;
+    }
+    .btn-action:hover {
+      background-color: var(--choco-light);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+    .logo-img {
+      @apply mx-auto block rounded-xl;
+      height: 180px;
+      max-width: 95%;
+      object-fit: contain;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+
+  <div class="card w-full max-w-sm sm:max-w-md lg:max-w-lg rounded-2xl overflow-hidden text-center bg-white shadow-xl">
+
+    <!-- Cabeçalho -->
+    <div class="bg-gradient-to-br from-[#4E342E] to-[#795548] p-6">
+      <img 
+        src="https://logodownload.org/wp-content/uploads/2017/07/cacau-show-logo-0.png" 
+        alt="Logo Cacau Show" 
+        class="logo-img"
+        onerror="this.onerror=null; this.src='https://placehold.co/180x120/4E342E/FBEED5?text=CACAU+SHOW';"
+      >
+      <h1 class="text-4xl font-bold text-white tracking-wider mt-2">CACAU SHOW</h1>
+      <p class="text-xl font-semibold text-white mt-1">BURITIS</p>
+    </div>
+
+    <!-- Conteúdo -->
+    <div class="p-6 space-y-4">
+      <p class="text-lg font-medium text-gray-700">CLIQUE NOS ÍCONES E FALE CONOSCO!</p>
+
+      <div class="space-y-3">
+        <a href="https://api.whatsapp.com/send?phone=553132450008&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido%20na%20Cacau%20Show%20Buritis!" target="_blank" class="btn-action">
+          <i class="fab fa-whatsapp text-2xl mr-3"></i> WhatsApp
+        </a>
+        <a href="tel:+553132450008" class="btn-action">
+          <i class="fas fa-phone-alt text-2xl mr-3"></i> Peça pelo Telefone
+        </a>
+        <a href="https://www.instagram.com/cacaushowburitis" target="_blank" class="btn-action">
+          <i class="fab fa-instagram text-2xl mr-3"></i> Instagram
+        </a>
+        <a href="https://www.ifood.com.br/delivery/belo-horizonte-mg/cacau-show-buritis-buritis/9754552c-f629-4b08-a366-86bd37c058cc" target="_blank" class="btn-action">
+          <i class="fas fa-utensils text-2xl mr-3"></i> iFood (Delivery)
+        </a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Avenida+Aggeo+Pio+Sobrinho,+472+-+Buritis,+Belo+Horizonte+-+MG" target="_blank" class="btn-action">
+          <i class="fas fa-map-marker-alt text-2xl mr-3"></i> Endereço da Loja
+        </a>
+      </div>
+
+      <!-- Rodapé -->
+      <div class="mt-6 pt-4 border-t border-gray-200 text-center">
+        <p class="text-sm font-semibold text-gray-700 flex items-center justify-center">
+          <i class="fas fa-map-marker-alt mr-1"></i> NOSSO ENDEREÇO:
+        </p>
+        <p class="text-base text-gray-600 font-light italic">Avenida Aggeo Pio Sobrinho, 472 - Buritis, Belo Horizonte - MG</p>
+        <p class="text-xs text-gray-400 mt-2 flex items-center justify-center">
+          <i class="fas fa-hand-pointer mr-1"></i> Toque no ícone acima para abrir o mapa.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
